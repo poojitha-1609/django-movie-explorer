@@ -1,0 +1,160 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }} | Movie Explorer</title>
+
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="{% url 'home' %}" class="logo">
+                🎬 Movie Explorer
+            </a>
+
+            <div class="nav-links">
+
+                <a href="{% url 'home' %}">
+                    Home
+                </a>
+
+                <a href="{% url 'home' %}#movies">
+                    Movies
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Movie Details -->
+    <main class="movie-detail-page">
+
+        <div class="movie-detail-card">
+
+
+            <div class="detail-icon">
+                🎬
+            </div>
+
+
+            <span class="section-label">
+                MOVIE DETAILS
+            </span>
+
+
+            <h1>
+                {{ title }}
+            </h1>
+
+
+            <div class="detail-divider"></div>
+
+
+            <div class="detail-grid">
+
+
+                <div class="detail-item">
+
+                    <span class="detail-label">
+                        LEAD ACTOR
+                    </span>
+
+                    <strong>
+                        ⭐ {{ hero }}
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <span class="detail-label">
+                        GENRE
+                    </span>
+
+                    <strong>
+                        🎭 {{ genre }}
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <span class="detail-label">
+                        LANGUAGE
+                    </span>
+
+                    <strong>
+                        🌐 {{ language }}
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="detail-description">
+
+                <p>
+                    Explore information about
+                    <strong>{{ title }}</strong>,
+                    featuring lead actor
+                    <strong>{{ hero }}</strong>.
+                </p>
+
+            </div>
+
+
+            <a href="{% url 'home' %}#movies"
+               class="back-button">
+
+                ← Back to Movies
+
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            🎬 Movie Explorer
+        </p>
+
+        <p class="footer-small">
+            Built with Python & Django
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

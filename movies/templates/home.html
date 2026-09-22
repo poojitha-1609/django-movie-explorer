@@ -1,0 +1,422 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Explorer | Django</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="{% url 'home' %}" class="logo">
+                🎬 Movie Explorer
+            </a>
+
+            <div class="nav-links">
+                <a href="{% url 'home' %}" class="active">Home</a>
+                <a href="#movies">Movies</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                DJANGO PROJECT
+            </span>
+
+            <h1>
+                Discover Amazing
+                <span>Indian Movies</span>
+            </h1>
+
+            <p>
+                Explore a collection of popular Indian movies,
+                their lead actors, genres and languages.
+                Built using Python and Django.
+            </p>
+
+            <a href="#movies" class="hero-button">
+                Explore Movies →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Movies Section -->
+    <section class="movies-section" id="movies">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                MOVIE COLLECTION
+            </span>
+
+            <h2>
+                Featured Movies
+            </h2>
+
+            <p>
+                Explore 10 popular movies and discover their lead actors.
+            </p>
+
+        </div>
+
+
+        <div class="movie-grid">
+
+
+            <!-- Baahubali -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    01
+                </div>
+
+                <div class="movie-icon">
+                    🎬
+                </div>
+
+                <h3>Baahubali</h3>
+
+                <p class="actor">
+                    ⭐ Prabhas
+                </p>
+
+                <p class="movie-info">
+                    Action / Drama
+                </p>
+
+                <a href="{% url 'bahubali' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- Pushpa -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    02
+                </div>
+
+                <div class="movie-icon">
+                    🔥
+                </div>
+
+                <h3>Pushpa</h3>
+
+                <p class="actor">
+                    ⭐ Allu Arjun
+                </p>
+
+                <p class="movie-info">
+                    Action / Drama
+                </p>
+
+                <a href="{% url 'pushpa' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- RRR -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    03
+                </div>
+
+                <div class="movie-icon">
+                    ⚔️
+                </div>
+
+                <h3>RRR</h3>
+
+                <p class="actor">
+                    ⭐ Jr. NTR & Ram Charan
+                </p>
+
+                <p class="movie-info">
+                    Action / Drama
+                </p>
+
+                <a href="{% url 'rrr' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- Salaar -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    04
+                </div>
+
+                <div class="movie-icon">
+                    🔥
+                </div>
+
+                <h3>Salaar</h3>
+
+                <p class="actor">
+                    ⭐ Prabhas
+                </p>
+
+                <p class="movie-info">
+                    Action / Thriller
+                </p>
+
+                <a href="{% url 'salaar' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- KGF -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    05
+                </div>
+
+                <div class="movie-icon">
+                    💥
+                </div>
+
+                <h3>KGF</h3>
+
+                <p class="actor">
+                    ⭐ Yash
+                </p>
+
+                <p class="movie-info">
+                    Action / Drama
+                </p>
+
+                <a href="{% url 'kgf' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- Vikram -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    06
+                </div>
+
+                <div class="movie-icon">
+                    🎯
+                </div>
+
+                <h3>Vikram</h3>
+
+                <p class="actor">
+                    ⭐ Kamal Haasan
+                </p>
+
+                <p class="movie-info">
+                    Action / Thriller
+                </p>
+
+                <a href="{% url 'vikram' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- Leo -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    07
+                </div>
+
+                <div class="movie-icon">
+                    🦁
+                </div>
+
+                <h3>Leo</h3>
+
+                <p class="actor">
+                    ⭐ Vijay
+                </p>
+
+                <p class="movie-info">
+                    Action / Thriller
+                </p>
+
+                <a href="{% url 'leo' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- Jailer -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    08
+                </div>
+
+                <div class="movie-icon">
+                    🔐
+                </div>
+
+                <h3>Jailer</h3>
+
+                <p class="actor">
+                    ⭐ Rajinikanth
+                </p>
+
+                <p class="movie-info">
+                    Action / Comedy
+                </p>
+
+                <a href="{% url 'jailer' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- Devara -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    09
+                </div>
+
+                <div class="movie-icon">
+                    🌊
+                </div>
+
+                <h3>Devara</h3>
+
+                <p class="actor">
+                    ⭐ Jr. NTR
+                </p>
+
+                <p class="movie-info">
+                    Action / Drama
+                </p>
+
+                <a href="{% url 'devara' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+            <!-- Kalki -->
+            <div class="movie-card">
+
+                <div class="movie-number">
+                    10
+                </div>
+
+                <div class="movie-icon">
+                    🚀
+                </div>
+
+                <h3>Kalki 2898 AD</h3>
+
+                <p class="actor">
+                    ⭐ Prabhas
+                </p>
+
+                <p class="movie-info">
+                    Sci-Fi / Action
+                </p>
+
+                <a href="{% url 'kalki' %}" class="movie-button">
+                    View Movie →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- About Project -->
+    <section class="about-section">
+
+        <div class="about-content">
+
+            <span class="section-label">
+                ABOUT THE PROJECT
+            </span>
+
+            <h2>
+                Built with Python & Django
+            </h2>
+
+            <p>
+                This project demonstrates Django URL routing,
+                function-based views, HTML templates, CSS styling
+                and dynamic content rendering.
+            </p>
+
+            <div class="tech-list">
+
+                <span>Python</span>
+                <span>Django</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Git</span>
+                <span>GitHub</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            🎬 Movie Explorer
+        </p>
+
+        <p class="footer-small">
+            Built with Python & Django
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
